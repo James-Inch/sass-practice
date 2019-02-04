@@ -3,12 +3,14 @@ body, html {
 }
 
 body{
-
+    font-family: "Monserrat";
     margin: 0;
 
     .bg{
         height: 100%;
         width: 100%;
-        background-color: black;
+        background-color: #171717;
+        position: absolute;
+        z-index: -1;
     }
 }
