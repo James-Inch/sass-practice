@@ -6,12 +6,20 @@ body {
   font-family: "Monserrat";
   margin: 0;
 }
-body .bg {
+body #bg {
   height: 100%;
   width: 100%;
   background-color: #171717;
   position: absolute;
   z-index: -1;
+}
+
+@media (min-width: 840px) {
+  main {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-areas: "card primary";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

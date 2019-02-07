@@ -1,3 +1,11 @@
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 body, html {
     height: 100%;
 }
@@ -6,11 +14,21 @@ body{
     font-family: "Monserrat";
     margin: 0;
 
-    .bg{
+    #bg{
         height: 100%;
         width: 100%;
         background-color: #171717;
         position: absolute;
         z-index: -1;
     }
+}
+
+main {
+    @include desktop {
+        display: grid; 
+        grid-template-columns: 50%;
+        grid-template-areas: "card primary";
+    }
+
+    
 }
