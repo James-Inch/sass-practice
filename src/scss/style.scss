@@ -1,5 +1,8 @@
 $desktop: 840px;
 
+$padding: 15px;
+$borders: 15px;
+
 @mixin desktop {
     @media (min-width: #{$desktop}) {
         @content;
@@ -27,8 +30,17 @@ main {
     @include desktop {
         display: grid; 
         grid-template-columns: 50%;
-        grid-template-areas: "card primary";
+        grid-template-areas: "primary card";
     }
 
-    
+    section#primary {
+        text-align: center;
+
+        @include desktop {
+            grid-area: primary;
+            text-align: center;
+        
+        }
+
+    }
 }

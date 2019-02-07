@@ -6,6 +6,7 @@ body {
   font-family: "Monserrat";
   margin: 0;
 }
+
 body #bg {
   height: 100%;
   width: 100%;
@@ -16,10 +17,22 @@ body #bg {
 
 @media (min-width: 840px) {
   main {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 50%;
-    grid-template-areas: "card primary";
+    -ms-grid-columns: 50%;
+        grid-template-columns: 50%;
+        grid-template-areas: "primary card";
   }
 }
 
+main section#primary {
+  text-align: center;
+}
+
+@media (min-width: 840px) {
+  main section#primary {
+    grid-area: primary;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
