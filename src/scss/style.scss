@@ -38,9 +38,33 @@ main {
 
         @include desktop {
             grid-area: primary;
-            text-align: center;
-        
+            height: fit-content;
+            align-self: center;
+            margin-top: 15em;
         }
 
+        header a {
+            text-decoration: none;
+            padding: 15px 8px 15px 8px;
+            color: #360330;
+            font-weight: bold;
+        }
+
+    }
+
+    section#card {
+        background-color: #360330;
+
+        @include desktop {
+            grid-area: card;
+            height: fit-content;
+            align-self: center;
+            
+        }
+
+        ul {
+           
+            list-style-type: none;
+        }
     }
 }
