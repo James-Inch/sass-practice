@@ -10,7 +10,7 @@ body {
 body #bg {
   height: 100%;
   width: 100%;
-  background-color: #171717;
+  background-color: #601F58;
   position: absolute;
   z-index: -1;
 }
@@ -51,6 +51,9 @@ main section#primary header a {
 
 main section#card {
   background-color: #360330;
+  margin-top: 50%;
+  width: 80%;
+  border-radius: 25px;
 }
 
 @media (min-width: 840px) {
